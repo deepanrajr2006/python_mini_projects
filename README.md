@@ -1,11 +1,38 @@
 # python_mini_projects
 A collection of beginner-friendly Python mini-projects to strengthen programming logic.
 
-# Dice Rolling Simulator 🎲
+1.Dice Rolling Simulator 🎲
 A simple interactive Python script that simulates rolling two six-sided dice using the `random` module.
 
-## Features
+# Features
 - Continuous play loop until the user exits.
 - runs the program based on the user input.
 - Displays individual dice outcomes and their total sum.
+
+2.# 🎯 Number Guessing Game in Python
+
+A simple command-line game where the user tries to guess a randomly generated number between 1 and 10 within a limited number of attempts. Built to practice loops, conditional statements, and user interaction.
+
+# 🚀 How It Works
+1. The program runs a loop for 3 attempts (`range(3)`).
+2. In each turn, the computer generates a random number between 1 and 10 using `random.randint(1, 10)`.
+3. The user inputs their guess.
+4. If it matches, the user wins! If it doesn't, the attempts decrease and it shows how many tries are left.
+
+# 💻 Code Structure
+import random
+
+count = 3
+for i in range(3):
+    guess = random.randint(1, 10)
+    choice = int(input("Enter your number (1 to 10): "))
+    
+    if choice == guess:
+        print("Congratulations, you won the game!")
+        break  # Optional: to stop the loop if they win
+    else:
+        count -= 1
+        print(f"You lose this round. You have {count} attempts left.")
+
+print("Game Over! Better luck next time.")
 

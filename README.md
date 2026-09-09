@@ -42,3 +42,15 @@ An interactive high-low guessing game where the player tries to find a secret nu
 * **Key Concepts:** `while` loops, conditional branching (`if-elif-else`), `random` module, game state persistence, and breaking out of loops (`break`).
 * **Logic Fix:** Placed the random number generation *outside* the loop so the target remains constant while the user makes multiple attempts.
 
+
+
+4. ✂️ Rock, Paper, Scissors Game (`rock_paper_scissors.py`)
+An interactive, fully-functional command-line implementation of Rock, Paper, Scissors with input sanitization, replay controls, and clean condition grouping.
+**Key Concepts:** `while` loops, lists (`random.choice()`), boolean logical operators (`or`), input validation with `continue`, and graceful exit handling.
+**Features:** 
+  - Validates user input to prevent crashes from typos.
+  - Displays both system and user choices clearly every round.
+  - Allows continuous play with a smooth `y/n` replay prompt.
+
+
+
